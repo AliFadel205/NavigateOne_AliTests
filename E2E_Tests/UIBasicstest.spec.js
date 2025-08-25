@@ -6,7 +6,7 @@ test.only('Browser Context Playwright test', async ({browser}) => // anonymous f
 
     const context = await browser.newContext();
     const page = await context.newPage();
-    await page.goto("https://one.navigate360.com/");
+    await page.goto("https://one-dev.navigate360.com/");
     console.log(await page.title());
     await expect(page).toHaveTitle("NavigateOne");
    
