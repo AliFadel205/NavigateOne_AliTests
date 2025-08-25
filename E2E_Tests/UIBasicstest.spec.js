@@ -15,6 +15,7 @@ test.only('Browser Context Playwright test', async ({browser}) => // anonymous f
     await page.locator('#btn-login').click();
     await page.waitForTimeout(5000);
     console.log(await page.locator('#error-message').textContent());
+    //Temporary line to trigger workflow
     //await page.waitForSelector('#error-message', { timeout: 10000 });
     //console.log(await page.locator('text=Wrong email or password.').textContent());
     //await expect(page.locator('text=Wrong email or password.')).toBeVisible();
